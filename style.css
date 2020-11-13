@@ -18,3 +18,138 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("./media/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--red);
+  visibility: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 85px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  align-items: center;
+}
+
+.left {
+  margin-right: 30px;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.desc {
+  color: #fff;
+  font-weight: 400;
+}
+
+.right {
+  margin-left: 30px;
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  box-shadow: 0 7px 2px -2px hsla(249, 10%, 26%, 0.5);
+}
+
+.banner .bold {
+  font-weight: 600;
+}
+
+.formcard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 7px 2px -2px hsla(249, 10%, 26%, 0.5);
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.firstname,
+.lastname,
+.email,
+.password {
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid var(--grayblue);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--green);
+  color: #fff;
+  box-shadow: 0 5px 2px -2px hsl(154, 59%, 45%);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--blue);
+  box-shadow: 0 5px 2px -2px hsla(249, 10%, 26%, 0.5);
+}
+
+.terms {
+  text-align: center;
+  font-size: 0.6rem;
+  color: var(--grayblue);
+}
+
+.red {
+  font-weight: 600;
+  color: var(--red);
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-gap: 20px;
+  }
+  .left {
+    margin-right: 10px;
+  }
+
+  .right {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .desc {
+    margin-bottom: 40px;
+  }
+}
