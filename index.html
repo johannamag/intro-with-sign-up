@@ -31,12 +31,53 @@
             <span class="bold">Try it free 7 days</span> then $20/mo. thereafter
           </p>
           <div class="formcard">
-            <form class="form">
-              <input type="text" class="firstname" placeholder="First Name" />
-              <input type="text" class="lastname" placeholder="Last Name" />
-              <input type="text" class="email" placeholder="Email Address" />
-              <input type="text" class="password" placeholder="Password" />
-              <input type="submit" class="btn" value="Claim your free trial" />
+            <form class="form" id="form">
+              <div class="form-control">
+                <input
+                  type="text"
+                  class="firstname"
+                  id="firstname"
+                  placeholder="First Name"
+                />
+                <img src="./media/icon-error.svg" alt="error" />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  id="lastname"
+                  class="lastname"
+                  placeholder="Last Name"
+                />
+                <img src="./media/icon-error.svg" alt="error" />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  id="email"
+                  class="email"
+                  placeholder="Email Address"
+                />
+                <img src="./media/icon-error.svg" alt="error" />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  id="password"
+                  class="password"
+                  placeholder="Password"
+                />
+                <img src="./media/icon-error.svg" alt="error" />
+                <small></small>
+              </div>
+              <input
+                type="submit"
+                class="btn"
+                id="btn"
+                value="Claim your free trial"
+              />
             </form>
             <p class="terms">
               By clicking the button, you are agreeing to our
